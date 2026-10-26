@@ -1,10 +1,11 @@
 name: Simple Hello World
 
-on: [push] 
+on:
+  workflow_dispatch: 
 
 jobs:
   say-hello:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
       - name: Print a message
-        run: echo "Hello world"
+        run: echo "Ετρεξε"
